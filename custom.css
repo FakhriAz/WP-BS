@@ -1,0 +1,60 @@
+.bg {
+    background:linear-gradient(to right, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    /* background-image: url('bg.jpg'); */
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }   
+
+.bg-txt {
+    color: rgba(123, 159, 166);
+}
+.row p {
+    display: block;
+    /* background: black; */
+}
+
+.row .far {
+    display: block;
+    /* background: black; */
+}
+.card .far {
+    color:rgba(123, 159, 166);
+    text-align: center;
+    margin-top: 1.5em;
+}
+.services_title {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.seperator {
+    text-align: center;
+    font-weight: 1000;
+    margin-bottom: 4rem;
+    color:rgba(123, 159, 166);
+}
+.about_heading {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 22%, rgba(116,188,209,1) 23%, rgba(73,165,191,1) 66%, rgba(73,165,191,1) 72%);;    
+}
+.about-title {
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(50, 125, 195, 1);
+}
+.about-subtitle {
+    text-align: center;
+    color: white;
+}
+
+.about-paragraph {
+    text-align: center;
+    color:rgb(78, 77, 77);
+    margin: 10% 25%;
+    }
