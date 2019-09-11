@@ -72,3 +72,50 @@
 .wrapper.light-blue {
     background: rgb(226, 243, 248);
 }
+.carousel-item article {
+    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 22%, rgba(116,188,209,1) 23%, rgba(73,165,191,1) 66%, rgba(73,165,191,1) 72%);   
+    padding: 10%;
+}    
+
+.contact-form{
+    background: rgb(226, 243, 248);;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
