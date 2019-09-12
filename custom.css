@@ -78,7 +78,7 @@
 }    
 
 .contact-form{
-    background: rgb(226, 243, 248);;
+    background: rgb(226, 243, 248);
     margin-top: 10%;
     margin-bottom: 5%;
     width: 70%;
@@ -109,8 +109,7 @@
     color: #fff;
     cursor: pointer;
 }
-.btnContactSubmit
-{
+.btnContactSubmit {
     width: 50%;
     border-radius: 1rem;
     padding: 1.5%;
@@ -119,3 +118,8 @@
     border: none;
     cursor: pointer;
 }
+
+.social-icons .list-group-item {
+    background-color: rgb(226, 243, 248); 
+
+}    
