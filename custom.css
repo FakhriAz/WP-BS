@@ -69,6 +69,13 @@
    padding-bottom: 10%; 
 }
 
+img {
+   border-radius: 10%; 
+}
+
+blog h3 {
+    text-align: center;
+}
 .wrapper.light-blue {
     background: rgb(226, 243, 248);
 }
@@ -82,6 +89,7 @@
     margin-top: 10%;
     margin-bottom: 5%;
     width: 70%;
+    border-radius: 10px;
 }
 .contact-form .form-control{
     border-radius:1rem;
@@ -121,5 +129,11 @@
 
 .social-icons .list-group-item {
     background-color: rgb(226, 243, 248); 
-
 }    
+
+.cr-author {
+    border-radius: 10px;
+    color: rgb(226, 243, 248);
+    background-color: rgba(50, 125, 195, 1);
+    padding-top: 1em;
+}
