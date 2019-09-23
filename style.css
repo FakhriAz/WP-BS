@@ -1,3 +1,13 @@
+/*
+Theme Name: BS-WP 
+Theme URI: https://fakhriazzouz.com
+Author: Fakhri Azzouz
+Author URI: https://fakhriazzouz.com
+Description: My first WP theme, coded for learning purposes.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
 .bg {
     background:linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 22%, rgba(116,188,209,1) 23%, rgba(73,165,191,1) 66%, rgba(73,165,191,1) 72%);
     /* background-image: url('bg.jpg'); */
