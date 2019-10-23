@@ -109,166 +109,29 @@
     <!--container-->
   </div>
   <!--wrapper-->
+  <div class="blog-main"> 
+  <h3 class="d-flex justify-content-center">Lastest blog posts</h3> 
 
-  <div class="blog">
-    <h3 class="d-flex justify-content-center">Lastest blog posts</h3>
-
-    <div class="hr-wrap">
-      <div class="divider div-transparent div-arrow-down"></div>
-    </div>
-
-    <div id="carouselblog" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselblog" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselblog" data-slide-to="1"></li>
-        <li data-target="#carouselblog" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <article class="d-block w-100">
-            <h6>Author:</h6>
-            <h6>Date:</h6>
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ac tortor vitae purus faucibus ornare suspendisse sed. Aliquam vestibulum morbi
-              blandit cursus risus at ultrices. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.
-              Urna porttitor rhoncus dolor purus non enim. Porta non pulvinar neque laoreet suspendisse interdum
-              consectetur libero. Faucibus turpis in eu mi.<br><br> Dolor morbi non arcu risus quis varius quam quisque
-              id. Nisi scelerisque eu ultrices vitae. Aliquam vestibulum morbi blandit cursus risus at. Sed vulputate mi
-              sit amet mauris commodo. Vitae ultricies leo integer malesuada nunc vel risus commodo. Id diam vel quam
-              elementum pulvinar etiam non. Maecenas accumsan lacus vel facilisis volutpat est velit. In nibh mauris
-              cursus mattis molestie a iaculis at erat. Varius sit amet mattis vulputate. Urna porttitor rhoncus dolor
-              purus non enim praesent elementum. Quis eleifend quam adipiscing vitae proin sagittis. Placerat duis
-              ultricies lacus sed turpis tincidunt.<br><br>
-              Orci nulla pellentesque dignissim enim sit amet venenatis. Urna condimentum mattis pellentesque id. Sapien
-              et ligula ullamcorper malesuada proin. Molestie nunc non blandit massa enim nec dui nunc mattis.
-              Vestibulum lectus mauris ultrices eros in. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
-              Quisque non tellus orci ac auctor. Quam id leo in vitae turpis massa sed elementum. Sem integer vitae
-              justo eget magna fermentum iaculis eu. In dictum non consectetur a erat nam at lectus. Nisl purus in
-              mollis nunc sed id semper. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-              <br><br>
-              Massa tincidunt nunc pulvinar sapien et ligula. Risus in hendrerit gravida rutrum quisque non. At ultrices
-              mi tempus imperdiet nulla malesuada pellentesque elit. Etiam non quam lacus suspendisse faucibus. Nec
-              feugiat nisl pretium fusce id. Vel quam elementum pulvinar etiam non quam lacus suspendisse.
-              Eget nunc lobortis mattis aliquam faucibus purus in massa.
-              <br><br>
-              Nunc faucibus a pellentesque sit amet porttitor. Elit duis tristique sollicitudin nibh sit. Tortor
-              dignissim convallis aenean et tortor at risus viverra. Tellus molestie nunc non blandit massa enim nec.
-              Eros in cursus turpis massa tincidunt. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi.
-              Ut sem viverra aliquet eget. Massa tempor nec feugiat nisl pretium fusce. Id venenatis a condimentum vitae
-              sapien pellentesque habitant morbi tristique. Amet commodo nulla facilisi nullam vehicula. Massa tempor
-              nec feugiat nisl pretium. A lacus vestibulum sed arcu non.<br><br>
-              Lectus nulla at volutpat diam ut venenatis. Consectetur purus ut faucibus pulvinar elementum integer enim.
-              Porttitor eget dolor morbi non arcu risus. Vel fringilla est ullamcorper eget nulla facilisi etiam. Proin
-              fermentum leo vel orci. Vitae auctor eu augue ut lectus arcu. Tristique senectus et netus et malesuada
-              fames. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.<br><br> Nullam non nisi est sit amet
-              facilisis magna. Tellus cras adipiscing enim eu turpis. Morbi tristique senectus et netus et malesuada.
-              Porta nibh venenatis cras sed felis. Nisl vel pretium lectus quam id leo. Eu mi bibendum neque egestas
-              congue quisque egestas. Massa eget egestas purus viverra accumsan in nisl. Pellentesque elit ullamcorper
-              dignissim cras tincidunt lobortis feugiat vivamus. Bibendum at varius vel pharetra vel turpis. Nisi
-              scelerisque eu ultrices vitae. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.</p>
-          </article>
-        </div>
-        <div class="carousel-item">
-          <article class="d-block w-100">
-            <h6>Author:</h6>
-            <h6>Date:</h6>
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ac tortor vitae purus faucibus ornare suspendisse sed. Aliquam vestibulum morbi
-              blandit cursus risus at ultrices. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.
-              Urna porttitor rhoncus dolor purus non enim. Porta non pulvinar neque laoreet suspendisse interdum
-              consectetur libero. Faucibus turpis in eu mi.<br><br> Dolor morbi non arcu risus quis varius quam quisque
-              id. Nisi scelerisque eu ultrices vitae. Aliquam vestibulum morbi blandit cursus risus at. Sed vulputate mi
-              sit amet mauris commodo. Vitae ultricies leo integer malesuada nunc vel risus commodo. Id diam vel quam
-              elementum pulvinar etiam non. Maecenas accumsan lacus vel facilisis volutpat est velit. In nibh mauris
-              cursus mattis molestie a iaculis at erat. Varius sit amet mattis vulputate. Urna porttitor rhoncus dolor
-              purus non enim praesent elementum. Quis eleifend quam adipiscing vitae proin sagittis. Placerat duis
-              ultricies lacus sed turpis tincidunt.<br><br>
-              Orci nulla pellentesque dignissim enim sit amet venenatis. Urna condimentum mattis pellentesque id. Sapien
-              et ligula ullamcorper malesuada proin. Molestie nunc non blandit massa enim nec dui nunc mattis.
-              Vestibulum lectus mauris ultrices eros in. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
-              Quisque non tellus orci ac auctor. Quam id leo in vitae turpis massa sed elementum. Sem integer vitae
-              justo eget magna fermentum iaculis eu. In dictum non consectetur a erat nam at lectus. Nisl purus in
-              mollis nunc sed id semper. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-              <br><br>
-              Massa tincidunt nunc pulvinar sapien et ligula. Risus in hendrerit gravida rutrum quisque non. At ultrices
-              mi tempus imperdiet nulla malesuada pellentesque elit. Etiam non quam lacus suspendisse faucibus. Nec
-              feugiat nisl pretium fusce id. Vel quam elementum pulvinar etiam non quam lacus suspendisse.
-              Eget nunc lobortis mattis aliquam faucibus purus in massa.
-              <br><br>
-              Nunc faucibus a pellentesque sit amet porttitor. Elit duis tristique sollicitudin nibh sit. Tortor
-              dignissim convallis aenean et tortor at risus viverra. Tellus molestie nunc non blandit massa enim nec.
-              Eros in cursus turpis massa tincidunt. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi.
-              Ut sem viverra aliquet eget. Massa tempor nec feugiat nisl pretium fusce. Id venenatis a condimentum vitae
-              sapien pellentesque habitant morbi tristique. Amet commodo nulla facilisi nullam vehicula. Massa tempor
-              nec feugiat nisl pretium. A lacus vestibulum sed arcu non.<br><br>
-              Lectus nulla at volutpat diam ut venenatis. Consectetur purus ut faucibus pulvinar elementum integer enim.
-              Porttitor eget dolor morbi non arcu risus. Vel fringilla est ullamcorper eget nulla facilisi etiam. Proin
-              fermentum leo vel orci. Vitae auctor eu augue ut lectus arcu. Tristique senectus et netus et malesuada
-              fames. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.<br><br> Nullam non nisi est sit amet
-              facilisis magna. Tellus cras adipiscing enim eu turpis. Morbi tristique senectus et netus et malesuada.
-              Porta nibh venenatis cras sed felis. Nisl vel pretium lectus quam id leo. Eu mi bibendum neque egestas
-              congue quisque egestas. Massa eget egestas purus viverra accumsan in nisl. Pellentesque elit ullamcorper
-              dignissim cras tincidunt lobortis feugiat vivamus. Bibendum at varius vel pharetra vel turpis. Nisi
-              scelerisque eu ultrices vitae. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.</p>
-          </article>
-        </div>
-        <div class="carousel-item">
-          <article class="d-block w-100">
-            <h6>Author:</h6>
-            <h6>Date:</h6>
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ac tortor vitae purus faucibus ornare suspendisse sed. Aliquam vestibulum morbi
-              blandit cursus risus at ultrices. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.
-              Urna porttitor rhoncus dolor purus non enim. Porta non pulvinar neque laoreet suspendisse interdum
-              consectetur libero. Faucibus turpis in eu mi.<br><br> Dolor morbi non arcu risus quis varius quam quisque
-              id. Nisi scelerisque eu ultrices vitae. Aliquam vestibulum morbi blandit cursus risus at. Sed vulputate mi
-              sit amet mauris commodo. Vitae ultricies leo integer malesuada nunc vel risus commodo. Id diam vel quam
-              elementum pulvinar etiam non. Maecenas accumsan lacus vel facilisis volutpat est velit. In nibh mauris
-              cursus mattis molestie a iaculis at erat. Varius sit amet mattis vulputate. Urna porttitor rhoncus dolor
-              purus non enim praesent elementum. Quis eleifend quam adipiscing vitae proin sagittis. Placerat duis
-              ultricies lacus sed turpis tincidunt.<br><br>
-              Orci nulla pellentesque dignissim enim sit amet venenatis. Urna condimentum mattis pellentesque id. Sapien
-              et ligula ullamcorper malesuada proin. Molestie nunc non blandit massa enim nec dui nunc mattis.
-              Vestibulum lectus mauris ultrices eros in. In nulla posuere sollicitudin aliquam ultrices sagittis orci.
-              Quisque non tellus orci ac auctor. Quam id leo in vitae turpis massa sed elementum. Sem integer vitae
-              justo eget magna fermentum iaculis eu. In dictum non consectetur a erat nam at lectus. Nisl purus in
-              mollis nunc sed id semper. Lorem ipsum dolor sit amet consectetur adipiscing elit.
-              <br><br>
-              Massa tincidunt nunc pulvinar sapien et ligula. Risus in hendrerit gravida rutrum quisque non. At ultrices
-              mi tempus imperdiet nulla malesuada pellentesque elit. Etiam non quam lacus suspendisse faucibus. Nec
-              feugiat nisl pretium fusce id. Vel quam elementum pulvinar etiam non quam lacus suspendisse.
-              Eget nunc lobortis mattis aliquam faucibus purus in massa.
-              <br><br>
-              Nunc faucibus a pellentesque sit amet porttitor. Elit duis tristique sollicitudin nibh sit. Tortor
-              dignissim convallis aenean et tortor at risus viverra. Tellus molestie nunc non blandit massa enim nec.
-              Eros in cursus turpis massa tincidunt. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi.
-              Ut sem viverra aliquet eget. Massa tempor nec feugiat nisl pretium fusce. Id venenatis a condimentum vitae
-              sapien pellentesque habitant morbi tristique. Amet commodo nulla facilisi nullam vehicula. Massa tempor
-              nec feugiat nisl pretium. A lacus vestibulum sed arcu non.<br><br>
-              Lectus nulla at volutpat diam ut venenatis. Consectetur purus ut faucibus pulvinar elementum integer enim.
-              Porttitor eget dolor morbi non arcu risus. Vel fringilla est ullamcorper eget nulla facilisi etiam. Proin
-              fermentum leo vel orci. Vitae auctor eu augue ut lectus arcu. Tristique senectus et netus et malesuada
-              fames. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.<br><br> Nullam non nisi est sit amet
-              facilisis magna. Tellus cras adipiscing enim eu turpis. Morbi tristique senectus et netus et malesuada.
-              Porta nibh venenatis cras sed felis. Nisl vel pretium lectus quam id leo. Eu mi bibendum neque egestas
-              congue quisque egestas. Massa eget egestas purus viverra accumsan in nisl. Pellentesque elit ullamcorper
-              dignissim cras tincidunt lobortis feugiat vivamus. Bibendum at varius vel pharetra vel turpis. Nisi
-              scelerisque eu ultrices vitae. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.</p>
-          </article>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselblog" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselblog" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+  <?php if(have_posts()) : ?>
+        <?php while(have_posts()) : the_post(); ?>
+        <div class="blog-post">
+            <h2 class="blog-post-title">
+               <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+              </a>
+            </h2>
+        <p class="blog-post-meta">
+          <?php the_time('F j, Y g: i a'); ?>
+          by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>">
+            <?php the_author(); ?>
+          </a>
+        </p>
+        <?php the_excerpt(); ?> <!-- can also use less convenient: the_content()-->
+      </div><!--  blog post  -->
+      <?php endwhile; ?>
+      <?php else : ?>
+      <p><?php __('No Posts')?></p>
+      <?php endif; ?>
   </div>
   <!--blog-->
 
