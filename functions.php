@@ -3,16 +3,14 @@
  function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
-
-// Theme support
-function wpb_theme_setup() {
-    
-}
-
 add_action( 'after_setup_theme', 'register_navwalker' );
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'BS-WP' ),
 ) );
+
+// Post thumbnail support
+
+add_theme_support( 'post-thumbnails' );
 
 // Excerpt length control
 function set_excerpt_length(){
@@ -20,5 +18,3 @@ function set_excerpt_length(){
 }
 
 add_filter('exerpt_length', 'set_excerpt_length');
-
-?>
