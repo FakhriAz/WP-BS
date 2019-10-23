@@ -126,6 +126,9 @@
             <?php the_author(); ?>
           </a>
         </p>
+          <?php if(has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail(); ?>
+          <?php endif; ?>
         <?php the_excerpt(); ?> <!-- can also use less convenient: the_content()-->
       </div><!--  blog post  -->
       <?php endwhile; ?>
