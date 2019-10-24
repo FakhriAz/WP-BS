@@ -1,8 +1,12 @@
 <div class="blog-post">
             <h2 class="blog-post-title">
-               <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-              </a>
+                <?php if(is_single()) : ?>
+                  <?php the_title(); ?>
+                <?php else: ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                <?php endif; ?>             
             </h2>
         <p class="blog-post-meta">
           <?php the_time('F j, Y g: i a'); ?>
@@ -15,5 +19,13 @@
               <?php the_post_thumbnail(); ?>
             </div>
           <?php endif; ?>
-        <?php the_excerpt(); ?> <!-- can also use less convenient: the_content()-->
+          <?php if(is_single()) : ?>
+                <?php the_content(); ?>  
+            <?php else: ?>
+                <?php the_excerpt(); ?>    
+            <?php endif; ?>  
+        
+            <?php if(is_single()) : ?>
+                <?php comments_template(); ?>     
+            <?php endif; ?>
       </div><!--  blog post  -->
