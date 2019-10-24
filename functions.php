@@ -8,8 +8,11 @@ register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'BS-WP' ),
 ) );
 
-// Post thumbnail support
+// Support post format
 
+add_theme_support('post-formats', array('aside', 'gallery'));
+
+// Post thumbnail support
 add_theme_support( 'post-thumbnails' );
 
 // Excerpt length control
