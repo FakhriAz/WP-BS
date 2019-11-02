@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card box">
             <i class="far fa-file-alt fa-5x"> </i>
             <div class="card-body text-center">
                 <h5 class="card-title">Services Title 1</h5>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card box">
             <i class="far fa-life-ring fa-5x"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Services Title 2</h5>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card box">
             <i class="far fa-play-circle fa-5x"></i>
             <div class="card-body text-center">
                 <h5 class="card-title text-center">Services Title 3</h5>

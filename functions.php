@@ -21,3 +21,35 @@ function set_excerpt_length(){
 }
 
 add_filter('exerpt_length', 'set_excerpt_length');
+
+//Widget locations
+function wpbs_init_widget($id) {
+    register_sidebar(array(
+        'name' => 'Box1',
+        'id'   => 'box1', 
+        'before_widget'=>'<div class="box">',
+        'after_widget' =>'</div>', 
+        'before_title'=>'<h5>',
+        'after_title' =>'</h5>'
+    ));
+    
+    register_sidebar(array(
+        'name' => 'Box2',
+        'id'   => 'box2', 
+        'before_widget'=>'<div class="box">',
+        'after_widget' =>'</div>', 
+        'before_title'=>'<h5>',
+        'after_title' =>'</h5>' 
+    ));
+
+    register_sidebar(array(
+        'name' => 'Box3',
+        'id'   => 'box3', 
+        'before_widget'=>'<div class="box">',
+        'after_widget' =>'</div>', 
+        'before_title'=>'<h5>',
+        'after_title' =>'</h5>'
+    ));
+}
+
+add_action('widgets_init', 'wpbs_init_widget');
