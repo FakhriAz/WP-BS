@@ -11,32 +11,23 @@
         <div class="row">
         <div class="col-sm-4">
             <div class="card box">
-            <i class="far fa-file-alt fa-5x"> </i>
-            <div class="card-body text-center">
-                <h5 class="card-title">Services Title 1</h5>
-                <p class="card-text text-left">Place some text for the service 1 here. </p>
-                <a href="#" class="btn btn-warning">More info</a>
-            </div>
+                <?php if(is_active_sidebar('box1')) : ?>
+                    <?php dynamic_sidebar('box1') ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="card box">
-            <i class="far fa-life-ring fa-5x"></i>
-            <div class="card-body text-center">
-                <h5 class="card-title">Services Title 2</h5>
-                <p class="card-text text-left">Place some text for the service 2 here. </p>
-                <a href="#" class="btn btn-warning">More info</a>
-            </div>
+                <?php if(is_active_sidebar('box2')) : ?>
+                    <?php dynamic_sidebar('box2') ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="card box">
-            <i class="far fa-play-circle fa-5x"></i>
-            <div class="card-body text-center">
-                <h5 class="card-title text-center">Services Title 3</h5>
-                <p class="card-text text-left">Place some text for the service 3 here. </p>
-                <a href="#" class="btn btn-warning text-right">More info</a>
-            </div>
+            <?php if(is_active_sidebar('box3')) : ?>
+                    <?php dynamic_sidebar('box3') ?>
+                <?php endif; ?>
             </div>
         </div>
         </div>
