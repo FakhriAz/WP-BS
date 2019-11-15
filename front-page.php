@@ -1,10 +1,12 @@
 <?php get_header(); ?>
   <!-- copied from index.html -->
-  <div class="bg">
-    <div class="bg-txt h1">
-      Dedicated WP Support
+  <section class="showcase">
+    <div class="container">  
+        <h1><?php echo get_theme_mod('showcase_heading', 'My first WP Theme') ?></h1>
+        <p><?php echo get_theme_mod('showcase_text', 'Custom WP theme') ?></p>
+        <a href="<?php echo get_theme_mod('btn_url', 'http://www.google.com/ncr') ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text', 'Get Started') ?></a>  
     </div>
-  </div>
+  </section>
     <div class="services_title">The main services I offer</div>
     <div class="separator">__________________</div>
     <div class="container">

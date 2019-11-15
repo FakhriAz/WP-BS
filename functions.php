@@ -53,3 +53,7 @@ function wpbs_init_widget($id) {
 }
 
 add_action('widgets_init', 'wpbs_init_widget');
+
+// Customizer file
+
+require get_template_directory(). '/inc/customizer.php'; 
