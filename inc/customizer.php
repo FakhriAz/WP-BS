@@ -2,7 +2,7 @@
 function wpbs_customize_register($wp_customize){
 // Showcase section
     $wp_customize->add_section('showcase', array(
-        'title' => __('Showcase', 'BS-WP01'), 
+        'title' => __('Showcase', 'BS-WP'), 
         'description' => sprintf(__('Options for showcase', 'BS-WP')),
         'priority' => 130
     ));
