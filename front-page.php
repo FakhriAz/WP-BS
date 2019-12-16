@@ -56,9 +56,11 @@
     </div>
   </section>
     <hr>
-    <div class="services_title">
-      <h2><?php echo get_theme_mod('WP_BS_un_fold_headline') ?></h2>
-    </div>
+    <?php if (get_theme_mod('WP_BS_un_fold_display') == 'Yes') { ?>
+        <div class="services_title">
+        <h2><?php echo get_theme_mod('WP_BS_un_fold_headline') ?></h2>
+        </div>
+    <?php } ?>    
     <div class="container">
         <div class="row">
         <div class="col-sm-4">

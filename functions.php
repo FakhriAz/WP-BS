@@ -64,6 +64,19 @@ function WP_BS_un_fold_txt($wp_customize) {
         'title' => 'Under the fold customize menu'
     ));
 
+    $wp_customize->add_setting('WP_BS_un_fold_display', array(
+        'default' => 'No'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_display_control', array(
+        'label' => 'Do you want to display this?',
+        'section' => 'WP_BS_un_fold_section',
+        'settings' => 'WP_BS_un_fold_display',
+        'type' => 'select',
+        'choices' => array('No' => 'No', 'Yes' => 'Yes')
+
+    )));
+
     $wp_customize->add_setting('WP_BS_un_fold_headline', array(
         'default' => 'Sample headline text'
     ));
