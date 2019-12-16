@@ -26,7 +26,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .row p {
     display: block;
     /* background: black; */
-/* } */
 
 .showcase {
     height: 100vh;
@@ -54,21 +53,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     text-align: center;
     font-size: 2rem;
 }
+
 hr {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
-.about_heading {
+
+.linker_heading {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 22%, rgba(116,188,209,1) 23%, rgba(73,165,191,1) 66%, rgba(73,165,191,1) 72%);   
 }
-.about-title {
+
+.linker-title {
     text-align: center;
     font-size: 4rem;
     color: rgba(50, 125, 195, 1);
 }
-.about-subtitle {
+
+.linker-subtitle {
     text-align: center;
     color: white;
 }

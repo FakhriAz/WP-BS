@@ -86,14 +86,14 @@
         </div>
         </div>
     </div>
-    <div class="about_heading">
-        <div class="about-title">
+    <div class="linker_heading">
+        <div class="linker-title">
         My story
         </div>
-        <div class="about-subtitle">
+        <div class="linker-subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
-    </div><!-- about_heading section -->
+    </div><!-- linker_heading section -->
 
     <div class="hr-wrap">
         <div class="divider div-transparent div-arrow-down"></div>
