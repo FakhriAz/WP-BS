@@ -55,8 +55,10 @@
         <a href="<?php echo get_theme_mod('btn_url', 'http://www.google.com/ncr') ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text', 'Get Started') ?></a>  
     </div>
   </section>
-    <div class="services_title">Front-page: the main services I offer</div>
-    <div class="separator">__________________</div>
+    <hr>
+    <div class="services_title">
+      <h2><?php echo get_theme_mod('WP_BS_un_fold_headline') ?></h2>
+    </div>
     <div class="container">
         <div class="row">
         <div class="col-sm-4">
@@ -65,7 +67,7 @@
                     <?php dynamic_sidebar('box1') ?>
                 <?php endif; ?>
             </div>
-        </div>
+        </div>  
         <div class="col-sm-4">
             <div class="card box">
                 <?php if(is_active_sidebar('box2')) : ?>

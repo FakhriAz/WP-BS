@@ -57,3 +57,21 @@ add_action('widgets_init', 'wpbs_init_widget');
 // Customizer file
 
 require get_template_directory(). '/inc/customizer.php'; 
+
+// Above the fold secondary text
+function WP_BS_un_fold_txt($wp_customize) {
+    $wp_customize->add_section('WP_BS_un_fold_section', array(
+        'title' => 'Under the fold customize menu'
+    ));
+
+    $wp_customize->add_setting('WP_BS_un_fold_headline', array(
+        'default' => 'Sample headline text'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_headline_control', array(
+        'label' => 'Headline',
+        'section' => 'WP_BS_un_fold_section',
+        'settings' => 'WP_BS_un_fold_headline'
+    )));
+}
+add_action('customize_register', 'WP_BS_un_fold_txt');

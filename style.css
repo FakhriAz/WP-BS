@@ -50,14 +50,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }    
 .services_title {
     margin-top: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
     font-size: 2rem;
 }
-.seperator {
-    text-align: center;
-    font-weight: 1000;
-    margin-bottom: 4rem;
-    color:rgba(123, 159, 166);
+hr {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .about_heading {
     padding-top: 6rem;
