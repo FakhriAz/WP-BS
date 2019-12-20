@@ -58,7 +58,7 @@ add_action('widgets_init', 'wpbs_init_widget');
 
 require get_template_directory(). '/inc/customizer.php'; 
 
-// Above the fold secondary text
+// Under the fold secondary text
 function WP_BS_un_fold_txt($wp_customize) {
     $wp_customize->add_section('WP_BS_un_fold_section', array(
         'title' => 'Under the fold customize menu'
@@ -88,3 +88,34 @@ function WP_BS_un_fold_txt($wp_customize) {
     )));
 }
 add_action('customize_register', 'WP_BS_un_fold_txt');
+
+// Linker section
+function WP_BS_sec_linker_txt($wp_customize) {
+    $wp_customize->add_section('WP_BS_section_linker', array(
+        'title' => 'Section linker'
+    ));
+    $wp_customize->add_setting('WP_BS_linker_display', array(
+        'default' => 'No'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_linker_control', array(
+        'label' => 'Do you want to display this?',
+        'section' => 'WP_BS_section_linker',
+        'settings' => 'WP_BS_linker_display',
+        'type' => 'select',
+        'choices' => array('No' => 'No', 'Yes' => 'Yes')
+
+    )));
+
+    $wp_customize->add_setting('WP_BS_linker_headline', array(
+        'default' => 'Sample linker headline'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_linker_headline_control', array(
+        'label' => 'Headline',
+        'section' => 'WP_BS_section_linker',
+        'settings' => 'WP_BS_linker_headline'
+    )));
+
+}
+add_action('customize_register', 'WP_BS_sec_linker_txt');
