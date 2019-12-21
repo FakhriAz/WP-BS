@@ -95,7 +95,7 @@ function WP_BS_sec_linker_txt($wp_customize) {
         'title' => 'Section linker'
     ));
     $wp_customize->add_setting('WP_BS_linker_display', array(
-        'default' => 'No'
+        'default' => 'Yes'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_linker_control', array(
@@ -116,6 +116,19 @@ function WP_BS_sec_linker_txt($wp_customize) {
         'section' => 'WP_BS_section_linker',
         'settings' => 'WP_BS_linker_headline'
     )));
+
+    // Paragraph text
+    $wp_customize->add_setting('WP_BS_linker_text', array(
+        'default' => 'Sample linker paragraph text'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_linker_text_control', array(
+        'label' => 'Text',
+        'section' => 'WP_BS_section_linker',
+        'settings' => 'WP_BS_linker_text',
+        'type'  => 'textarea'
+    )));
+
 
 }
 add_action('customize_register', 'WP_BS_sec_linker_txt');
