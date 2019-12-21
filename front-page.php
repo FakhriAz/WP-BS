@@ -86,15 +86,16 @@
         </div>
         </div>
     </div>
-    <div class="linker_heading">
-        <div class="linker-title">
-        My story
-        </div>
-        <div class="linker-subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-    </div><!-- linker_heading section -->
-
+    <?php if (get_theme_mod('WP_BS_linker_display') == 'Yes') { ?>
+        <div class="linker_heading">
+            <div class="linker-title">
+                <?php echo get_theme_mod('WP_BS_linker_headline') ?>
+            </div>
+            <div class="linker-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div><!-- linker_heading section -->
+    <?php } ?>  
     <div class="hr-wrap">
         <div class="divider div-transparent div-arrow-down"></div>
     </div>
