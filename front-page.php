@@ -109,51 +109,7 @@
         voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem</p>
     </div>
 
-    <div class="wrapper light-blue">
-        <div class="team container">
-        <div class="row">
-            <img class="img-team col-md-6 col-sm-12" src="profile-pict.jpg">
-            <div class="team-memb col-md-6 col-sm-12">
-            <h3>Name & position</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam,</p>
-            </div>
-        </div>
-        <!--row-->
-        </div>
-        <!--container-->
-    </div>
-    <!--wrapper-->
-
-    <div class="wrapper white">
-        <div class="team white container">
-        <div class="row">
-            <div class="team-memb col-md-6 col-sm-12">
-            <h3>Name & position</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam,</p>
-            </div>
-            <img class="img-team col-md-6 col-sm-12" src="profile-pict.jpg">
-        </div>
-        <!--row-->
-        </div>
-        <!--container-->
-    </div>
-    <!--wrapper-->
-    <div class="wrapper light-blue">
-        <div class="team container">
-        <div class="row">
-            <img class="img-team col-md-6 col-sm-12" src="profile-pict.jpg">
-            <div class="team-memb col-md-6 col-sm-12">
-            <h3>Name & position</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam,</p>
-            </div>
-        </div>
-        <!--row-->
-        </div>
-        <!--container-->
-    </div>
+    
   <!-- copied from index.html -->
 
 <?php get_footer(); ?>  

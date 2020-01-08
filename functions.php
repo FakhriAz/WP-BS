@@ -132,3 +132,4 @@ function WP_BS_sec_linker_txt($wp_customize) {
 
 }
 add_action('customize_register', 'WP_BS_sec_linker_txt');
+
