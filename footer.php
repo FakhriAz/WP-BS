@@ -1,11 +1,4 @@
 <footer>
-    <div class="social-icons">
-      <ul class="list-group list-group-horizontal d-flex justify-content-center">
-        <li class="list-group-item"><i class="fab fa-linkedin fa-3x"></i></li>
-        <li class="list-group-item"><i class="fab fa-facebook-square fa-3x"></i></li>
-        <li class="list-group-item"><i class="fab fa-twitter-square fa-3x"></i></li>
-      </ul>
-    </div>
     <div class="cr-author d-flex flex-row justify-content-center">
       <p>Developed by: Fakhri Azzouz &copy; <?php echo Date('Y'); ?> - <?php bloginfo('name')?></p>
     </div>
