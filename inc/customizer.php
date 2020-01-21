@@ -8,7 +8,7 @@ function wpbs_customize_register($wp_customize){
     ));
 
     $wp_customize->add_setting('showcase_image', array(
-        'default'  => get_bloginfo('template_directory').'/img/showcase.jpg' ,
+        'default'  => get_bloginfo('template_directory').'/showcase.jpg' ,
         'type'     => 'theme_mod'
     ));
 

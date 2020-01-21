@@ -20,7 +20,7 @@
   <?php wp_head(); ?>
     <style>
         .showcase {
-            background:url (<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>);
+            background:url (<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/showcase.jpg'); ?>);
         }
     </style>
 </head>
@@ -101,7 +101,8 @@
     </div>
 
     <div class="about-paragraph">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    <?php echo get_bloginfo('template_directory');?>
+        <p>TTTSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
         aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
         enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
         ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
