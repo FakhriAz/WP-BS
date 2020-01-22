@@ -64,4 +64,7 @@ function wpbs_customize_register($wp_customize){
     ));
     }
 add_action('customize_register', 'wpbs_customize_register') 
+
+
+
 ?>

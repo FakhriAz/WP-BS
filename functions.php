@@ -133,6 +133,38 @@ function WP_BS_sec_linker_txt($wp_customize) {
 }
 add_action('customize_register', 'WP_BS_sec_linker_txt');
 
+// About us text
+
+function WP_BS_about_txt($wp_customize) {
+    $wp_customize->add_section('WP_BS_about_us', array(
+        'title' => 'About us'
+    ));
+
+    $wp_customize->add_setting('WP_BS_about_headline', array(
+        'default' => 'Sample linker headline'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_about_headline_control', array(
+        'label' => 'Headline',
+        'section' => 'WP_BS_about_us',
+        'settings' => 'WP_BS_about_headline'
+    )));
+
+    // Paragraph text
+    $wp_customize->add_setting('WP_BS_about_us_text', array(
+        'default' => 'Sample linker paragraph text'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_about_us_text_control', array(
+        'label' => 'Text',
+        'section' => 'WP_BS_about_us',
+        'settings' => 'WP_BS_about_us_text',
+        'type'  => 'textarea'
+    )));
+
+}
+add_action('customize_register', 'WP_BS_about_txt');
+
 /**
  * Register `team` post type
  */
