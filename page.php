@@ -109,27 +109,26 @@
     <!--container-->
   </div>
   <!--wrapper-->
-  <div class="blog-main"> 
-  <h3 class="d-flex justify-content-center">Lastest blog posts</h3> 
-
-  <?php if(have_posts()) : ?>
+  <div class="blog-main">    
+    <h3 class="d-flex justify-content-center">Lastest blog posts</h3> 
+    <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
-        <div class="blog-post">
-            <h2 class="blog-post-title">
-                <?php the_title(); ?>
-            </h2>
-        </p>
-          <?php if(has_post_thumbnail()) : ?>
-            <div class="post-thumb">
-              <?php the_post_thumbnail(); ?>
-            </div>
-          <?php endif; ?>
-        <?php the_content(); ?>
-      </div><!--  blog post  -->
-      <?php endwhile; ?>
-      <?php else : ?>
-      <p><?php __('No Pages')?></p>
-      <?php endif; ?>
+          <div class="blog-post">
+              <h2 class="blog-post-title">
+                  <?php the_title(); ?>
+              </h2>
+          </p>
+            <?php if(has_post_thumbnail()) : ?>
+              <div class="post-thumb">
+                <?php the_post_thumbnail(); ?>
+              </div>
+            <?php endif; ?>
+          <?php the_content(); ?>
+          </div><!--  blog post  -->
+          <?php endwhile; ?>
+          <?php else : ?>
+        <p><?php __('No Pages')?></p>
+    <?php endif; ?>
   </div>
   <!--blog-->
 <?php get_footer(); ?>

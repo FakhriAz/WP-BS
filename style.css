@@ -50,7 +50,7 @@ hr {
 .linker-title {
     text-align: center;
     font-size: 4rem;
-    color: rgba(50, 125, 195, 1);
+    color:rgba(50, 125, 195, 1);
 }
 
 .linker-subtitle {
@@ -73,10 +73,6 @@ img {
    border-radius: 10%; 
 }
 
-.blog h3 {
-    padding-top: 45px;
-    text-align: center;
-}
 .wrapper.light-blue {
     background: rgb(226, 243, 248);
 }
@@ -137,4 +133,9 @@ img {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.container .archive-sidebar-widget {
+    color: darkslategrey;
+    background-color: lightgray;    
 }
