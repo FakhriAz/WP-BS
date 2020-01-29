@@ -91,3 +91,18 @@ function team_post_type() {
  }
  add_action( 'init', 'team_post_type', 0 );
 
+// Dynamic sidebar widget
+function post_archive_register_sidebars() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Primary Sidebar', 'post_archive' ),
+            'id'            => 'post-archive',
+            'description' => __( 'post archive sidebar.', 'post_archive' ),
+            'before_widget' => '<div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3">',
+            'after_title' => '</h2>'
+        )
+    );
+}
+add_action( 'widgets_init', 'post_archive_register_sidebars' );

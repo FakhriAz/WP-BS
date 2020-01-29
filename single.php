@@ -12,17 +12,13 @@
       </div><!-- post div  -->
   <div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">
      <!--Archive sidebar   -->
-    <!-- <div class="archive-sidebar-widget"> -->
-        <h3>Archive</h3>
-        <ul>
-          <li>Janu</li>
-          <li>April</li>
-          <li>May</li>
-          <li>October</li>
-          <li>December</li>
-        </ul>
-      <!-- </div> -->
-    </div><!--  col archive   -->
+    <?php if ( is_active_sidebar( 'post-archive' ) ) : ?>
+        <?php dynamic_sidebar( 'post-archive' ); ?>
+    <?php else : ?>
+        <!-- Time to add some widgets! -->
+    <?php endif; ?>
+    </div>
+    <!--  col archive   -->
       </div> <!-- row -->
   </div> <!-- Container -->
   <!--blog-->   
