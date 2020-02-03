@@ -118,3 +118,6 @@ register_sidebar( array(
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>'
   ) );
+
+	// Add theme support for Automatic Feed Links
+	add_theme_support( 'automatic-feed-links' );
