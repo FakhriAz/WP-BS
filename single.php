@@ -3,8 +3,9 @@
     <div class="row">
     <div class="col-sm-9">
     <?php if(have_posts()) : ?>
-        <?php while(have_posts()) : the_post(); ?>
+      <?php while(have_posts()) : the_post(); ?>
         <?php get_template_part('content', get_post_format()); ?>
+        <p><?php the_tags(); ?></p>
       <?php endwhile; ?>
       <?php else : ?>
       <p><?php __('No Posts')?></p>
