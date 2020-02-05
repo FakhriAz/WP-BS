@@ -5,7 +5,7 @@
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'BS-WP' ),
+    'primary' => __( 'Primary Menu', 'bs-wp' ),
 ) );
 
 // Support post format
@@ -95,9 +95,9 @@ function team_post_type() {
 function post_archive_register_sidebars() {
     register_sidebar(
         array(
-            'name'          => __( 'Primary Sidebar', 'post_archive' ),
+            'name'          => __( 'Primary Sidebar', 'bs-wp' ),
             'id'            => 'post-archive',
-            'description' => __( 'post archive sidebar.', 'post_archive' ),
+            'description' => __( 'post archive sidebar.', 'bs-wp' ),
             'before_widget' => '<div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">',
             'after_widget' => '</div>',
             'before_title' => '<h3">',

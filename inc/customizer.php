@@ -2,8 +2,8 @@
 function wpbs_customize_register($wp_customize){
 // Showcase section
     $wp_customize->add_section('showcase', array(
-        'title' => __('Showcase', 'BS-WP'), 
-        'description' => sprintf(__('Options for showcase', 'BS-WP')),
+        'title' => __('Showcase', 'bs-wp'), 
+        'description' => sprintf(__('Options for showcase', 'bs-wp')),
         'priority' => 130
     ));
 
@@ -13,52 +13,52 @@ function wpbs_customize_register($wp_customize){
     ));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'showcase_image', array (
-        'label'  => __('Showcase Image', 'BS-WP'),
+        'label'  => __('Showcase Image', 'bs-wp'),
         'section'  => 'showcase', 
         'settings' => 'showcase_image',
         'priority'  => 1
     )));
 
     $wp_customize->add_setting('showcase_heading', array(
-        'default'  => _x('My first WP Theme', 'BS-WP'),
+        'default'  => _x('My first WP Theme', 'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
     $wp_customize->add_control('showcase_heading', array(
-        'label'  => __('Heading', 'BS-WP'),
+        'label'  => __('Heading', 'bs-wp'),
         'section'  => 'showcase', 
         'priority'  => 2
     ));
 
     $wp_customize->add_setting('showcase_text', array(
-        'default'  => _x('Lorem ipsum showcase text', 'BS-WP'),
+        'default'  => _x('Lorem ipsum showcase text', 'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
     $wp_customize->add_control('showcase_text', array(
-        'label'  => __('Text', 'BS-WP'),
+        'label'  => __('Text', 'bs-wp'),
         'section'  => 'showcase', 
         'priority'  => 3
     ));
 
     $wp_customize->add_setting('btn_url', array(
-        'default'  => _x('http://google.com/ncr', 'BS-WP'),
+        'default'  => _x('http://google.com/ncr', 'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
     $wp_customize->add_control('btn_url', array(
-        'label'  => __('Button URL', 'BS-WP'),
+        'label'  => __('Button URL', 'bs-wp'),
         'section'  => 'showcase', 
         'priority'  => 4
     ));
 
     $wp_customize->add_setting('btn_text', array(
-        'default'  => _x('Read more', 'BS-WP'),
+        'default'  => _x('Read more', 'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
     $wp_customize->add_control('btn_text', array(
-        'label'  => __('Button Text', 'BS-WP'),
+        'label'  => __('Button Text', 'bs-wp'),
         'section'  => 'showcase', 
         'priority'  => 5
     ));
