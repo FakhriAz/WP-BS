@@ -10,7 +10,7 @@
           <?php get_template_part('content', get_post_format()); ?>
       <?php endwhile; ?>
       <?php else : ?>
-      <p><?php __('No Posts')?></p>
+      <p><?php __('No Posts', 'bs-wp')?></p>
     <?php endif; ?>
     </div><!-- posts div  -->
       <div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">

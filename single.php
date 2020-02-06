@@ -8,7 +8,7 @@
         <p><?php the_tags(); ?></p>
       <?php endwhile; ?>
       <?php else : ?>
-      <p><?php __('No Posts')?></p>
+      <p><?php __('No Posts', 'bs-wp')?></p>
       <?php endif; ?>
       </div><!-- post div  -->
   <div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">

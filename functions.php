@@ -69,13 +69,13 @@ function team_post_type() {
          'singular_name' => _x('Team','post type singular name', 'bs-wp'),
          'menu_name' => 'Team Profiles',
          'add_new' => _x('Add New', 'add new team item', 'bs-wp'),
-         'add_new_item' => __("Add New Profile"),
-         'edit_item' => __("Edit Profile"),
-         'new_item' => __("New Profile"),
-         'view_item' => __("View Profile"),
-         'search_items' => __("Search Profiles"),
-         'not_found' =>  __("No Profiles Found"),
-         'not_found_in_trash' => __("No Profiles Found in Trash"),
+         'add_new_item' => __('Add New Profile', 'bs-wp'),
+         'edit_item' => __('Edit Profile', 'bs-wp'),
+         'new_item' => __('New Profile', 'bs-wp'),
+         'view_item' => __('View Profile', 'bs-wp'),
+         'search_items' => __('Search Profiles', 'bs-wp'),
+         'not_found' =>  __('No Profiles Found', 'bs-wp'),
+         'not_found_in_trash' => __('No Profiles Found in Trash', 'bs-wp'),
          'parent_item_colon' => ''
      );
      
@@ -112,7 +112,7 @@ add_action( 'widgets_init', 'post_archive_register_sidebars' );
 register_sidebar( array(
     'name' => '404 Page',
     'id' => '404',
-    'description'  => __( 'Content for your 404 error page goes here.' ),
+    'description'  => __( 'Content for your 404 error page goes here.', 'bs-wp' ),
     'before_widget' => '<div id="error-box">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
