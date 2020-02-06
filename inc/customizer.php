@@ -20,7 +20,7 @@ function wpbs_customize_register($wp_customize){
     )));
 
     $wp_customize->add_setting('showcase_heading', array(
-        'default'  => _x('My first WP Theme', 'bs-wp'),
+        'default'  => _x('My first WP Theme', 'showcase heading' ,'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
@@ -31,7 +31,7 @@ function wpbs_customize_register($wp_customize){
     ));
 
     $wp_customize->add_setting('showcase_text', array(
-        'default'  => _x('Lorem ipsum showcase text', 'bs-wp'),
+        'default'  => _x('Lorem ipsum showcase text', 'showcase text' , 'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
@@ -42,7 +42,7 @@ function wpbs_customize_register($wp_customize){
     ));
 
     $wp_customize->add_setting('btn_url', array(
-        'default'  => _x('http://google.com/ncr', 'bs-wp'),
+        'default'  => _x('http://google.com/ncr', 'button url' ,'bs-wp'),
         'type'     => 'theme_mod'
     ));
 
@@ -53,7 +53,7 @@ function wpbs_customize_register($wp_customize){
     ));
 
     $wp_customize->add_setting('btn_text', array(
-        'default'  => _x('Read more', 'bs-wp'),
+        'default'  => _x('Read more', 'button text' ,'bs-wp'),
         'type'     => 'theme_mod'
     ));
 

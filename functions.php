@@ -65,10 +65,10 @@ function team_post_type() {
    
     // Labels
      $labels = array(
-         'name' => _x("Team", "post type general name"),
-         'singular_name' => _x("Team", "post type singular name"),
+         'name' => _x('Team', 'post type general name', 'bs-wp'),
+         'singular_name' => _x('Team','post type singular name', 'bs-wp'),
          'menu_name' => 'Team Profiles',
-         'add_new' => _x("Add New", "team item"),
+         'add_new' => _x('Add New', 'add new team item', 'bs-wp'),
          'add_new_item' => __("Add New Profile"),
          'edit_item' => __("Edit Profile"),
          'new_item' => __("New Profile"),
