@@ -79,18 +79,6 @@ function team_post_type() {
          'parent_item_colon' => ''
      );
      
-     // Register post type
-     register_post_type('team' , array(
-         'labels' => $labels,
-         'public' => true,
-         'has_archive' => false,
-         'menu_icon' => get_stylesheet_directory_uri() . '/team-icon.png',
-         'rewrite' => false,
-         'supports' => array('title', 'editor', 'thumbnail')
-     ) );
- }
- add_action( 'init', 'team_post_type', 0 );
-
 // Dynamic sidebar widget
 function post_archive_register_sidebars() {
     register_sidebar(
