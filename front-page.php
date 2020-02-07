@@ -12,11 +12,6 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- Font awesome5  -->
   <script src="https://kit.fontawesome.com/59e8cbdc1f.js"></script>
-  <title>
-    <?php bloginfo('name') ?> |
-    <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
-    <?php wp_title(); ?>
-  </title>
   <?php wp_head(); ?>
     <style>
         .showcase {

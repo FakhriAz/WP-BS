@@ -87,4 +87,11 @@ register_sidebar( array(
   ) );
 
 	// Add theme support for Automatic Feed Links
-	add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'automatic-feed-links' );
+    
+    // Adds <title> tag support
+    function do_title_theme_setup() {
+        add_theme_support( 'title-tag' );  
+}
+add_action( 'after_setup_theme', 'do_title_theme_setup');
+
