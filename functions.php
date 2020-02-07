@@ -65,20 +65,32 @@ function team_post_type() {
    
     // Labels
      $labels = array(
-         'name' => _x('Team', 'post type general name', 'bs-wp'),
-         'singular_name' => _x('Team','post type singular name', 'bs-wp'),
+         'name' => _x("Team", "post type general name"),
+         'singular_name' => _x("Team", "post type singular name"),
          'menu_name' => 'Team Profiles',
-         'add_new' => _x('Add New', 'add new team item', 'bs-wp'),
-         'add_new_item' => __('Add New Profile', 'bs-wp'),
-         'edit_item' => __('Edit Profile', 'bs-wp'),
-         'new_item' => __('New Profile', 'bs-wp'),
-         'view_item' => __('View Profile', 'bs-wp'),
-         'search_items' => __('Search Profiles', 'bs-wp'),
-         'not_found' =>  __('No Profiles Found', 'bs-wp'),
-         'not_found_in_trash' => __('No Profiles Found in Trash', 'bs-wp'),
+         'add_new' => _x("Add New", "team item"),
+         'add_new_item' => __("Add New Profile"),
+         'edit_item' => __("Edit Profile"),
+         'new_item' => __("New Profile"),
+         'view_item' => __("View Profile"),
+         'search_items' => __("Search Profiles"),
+         'not_found' =>  __("No Profiles Found"),
+         'not_found_in_trash' => __("No Profiles Found in Trash"),
          'parent_item_colon' => ''
      );
      
+     // Register post type
+     register_post_type('team' , array(
+         'labels' => $labels,
+         'public' => true,
+         'has_archive' => false,
+         'menu_icon' => get_stylesheet_directory_uri() . '/team-icon.png',
+         'rewrite' => false,
+         'supports' => array('title', 'editor', 'thumbnail')
+     ) );
+ }
+ add_action( 'init', 'team_post_type', 0 );
+
 // Dynamic sidebar widget
 function post_archive_register_sidebars() {
     register_sidebar(
@@ -100,7 +112,7 @@ add_action( 'widgets_init', 'post_archive_register_sidebars' );
 register_sidebar( array(
     'name' => '404 Page',
     'id' => '404',
-    'description'  => __( 'Content for your 404 error page goes here.', 'bs-wp' ),
+    'description'  => __( 'Content for your 404 error page goes here.' ),
     'before_widget' => '<div id="error-box">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
