@@ -106,3 +106,5 @@ add_action( 'after_setup_theme', 'do_title_theme_setup');
             </nav>
     <?php }
     } 
+// Content width 
+if ( ! isset( $content_width ) ) $content_width = 900;
