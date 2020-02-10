@@ -95,3 +95,14 @@ register_sidebar( array(
 }
 add_action( 'after_setup_theme', 'do_title_theme_setup');
 
+    //Add pagination
+    function pagination_nav() {
+        global $wp_query;
+     
+        if ( $wp_query->max_num_pages > 1 ) { ?>
+            <nav class="pagination" role="navigation">
+                <div class="nav-previous"><?php next_posts_link( '&larr; Older posts' ); ?></div>
+                <div class="nav-next"><?php previous_posts_link( 'Newer posts &rarr;' ); ?></div>
+            </nav>
+    <?php }
+    } 

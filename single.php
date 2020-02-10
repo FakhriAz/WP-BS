@@ -7,6 +7,8 @@
         <?php get_template_part('content', get_post_format()); ?>
         <p><?php the_tags(); ?></p>
       <?php endwhile; ?>
+      <!-- Add pagination -->
+      <?php pagination_nav(); ?>
       <?php else : ?>
       <p><?php __('No Posts', 'bs-wp')?></p>
       <?php endif; ?>
