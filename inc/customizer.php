@@ -78,7 +78,22 @@ function WP_BS_un_fold_txt($wp_customize) {
 
     $wp_customize->add_setting('WP_BS_un_fold_display', array(
         'default' => 'No',
+        'sanitize_callback' => 'theme_sanitize_numbers'
     ));
+    //Function to sanitize select option
+
+function theme_sanitize_numbers( $input ) {
+ $valid = array('No' => 'No',
+                'Yes' => 'Yes'
+            );
+ if ( array_key_exists( $input, $valid ) ) {
+  return $input;
+ } else {
+  return '';
+ }
+}
+
+    //End of function to sanitize select option
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_display_control', array(
         'label' => 'Do you want to display this?',
