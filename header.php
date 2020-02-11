@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- Font awesome5  -->
   <script src="https://kit.fontawesome.com/59e8cbdc1f.js"></script>
+  <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php wp_head(); ?>
 </head>
 <body>
