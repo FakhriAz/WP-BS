@@ -9,7 +9,8 @@ function wpbs_customize_register($wp_customize){
 
     $wp_customize->add_setting('showcase_image', array(
         'default'  => get_bloginfo('template_directory').'/showcase.jpg' ,
-        'type'     => 'theme_mod'
+        'type'     => 'theme_mod',
+        'sanitize_callback' =>'esc_url'
     ));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'showcase_image', array (
@@ -21,7 +22,8 @@ function wpbs_customize_register($wp_customize){
 
     $wp_customize->add_setting('showcase_heading', array(
         'default'  => _x('My first WP Theme', 'showcase heading' ,'bs-wp'),
-        'type'     => 'theme_mod'
+        'type'     => 'theme_mod',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control('showcase_heading', array(
@@ -32,7 +34,8 @@ function wpbs_customize_register($wp_customize){
 
     $wp_customize->add_setting('showcase_text', array(
         'default'  => _x('Lorem ipsum showcase text', 'showcase text' , 'bs-wp'),
-        'type'     => 'theme_mod'
+        'type'     => 'theme_mod',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control('showcase_text', array(
@@ -43,7 +46,8 @@ function wpbs_customize_register($wp_customize){
 
     $wp_customize->add_setting('btn_url', array(
         'default'  => _x('http://google.com/ncr', 'button url' ,'bs-wp'),
-        'type'     => 'theme_mod'
+        'type'     => 'theme_mod',
+        'sanitize_callback' => 'esc_url_raw'
     ));
 
     $wp_customize->add_control('btn_url', array(
@@ -54,7 +58,8 @@ function wpbs_customize_register($wp_customize){
 
     $wp_customize->add_setting('btn_text', array(
         'default'  => _x('Read more', 'button text' ,'bs-wp'),
-        'type'     => 'theme_mod'
+        'type'     => 'theme_mod',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control('btn_text', array(
@@ -72,7 +77,7 @@ function WP_BS_un_fold_txt($wp_customize) {
     ));
 
     $wp_customize->add_setting('WP_BS_un_fold_display', array(
-        'default' => 'No'
+        'default' => 'No',
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_display_control', array(
