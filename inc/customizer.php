@@ -78,11 +78,11 @@ function WP_BS_un_fold_txt($wp_customize) {
 
     $wp_customize->add_setting('WP_BS_un_fold_display', array(
         'default' => 'No',
-        'sanitize_callback' => 'theme_sanitize_numbers'
+        'sanitize_callback' => 'theme_sanitize_yn'
     ));
     //Function to sanitize select option
 
-function theme_sanitize_numbers( $input ) {
+function theme_sanitize_yn( $input ) {
  $valid = array('No' => 'No',
                 'Yes' => 'Yes'
             );
@@ -105,7 +105,8 @@ function theme_sanitize_numbers( $input ) {
     )));
 
     $wp_customize->add_setting('WP_BS_un_fold_headline', array(
-        'default' => 'Sample headline text'
+        'default' => 'Sample headline text',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_headline_control', array(
@@ -122,7 +123,8 @@ function WP_BS_sec_linker_txt($wp_customize) {
         'title' => 'Section linker'
     ));
     $wp_customize->add_setting('WP_BS_linker_display', array(
-        'default' => 'Yes'
+        'default' => 'Yes',
+        'sanitize_callback' => 'theme_sanitize_yn'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_linker_control', array(
@@ -135,7 +137,8 @@ function WP_BS_sec_linker_txt($wp_customize) {
     )));
 
     $wp_customize->add_setting('WP_BS_linker_headline', array(
-        'default' => 'Sample linker headline'
+        'default' => 'Sample linker headline',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_linker_headline_control', array(
@@ -146,7 +149,8 @@ function WP_BS_sec_linker_txt($wp_customize) {
 
     // Paragraph text
     $wp_customize->add_setting('WP_BS_linker_text', array(
-        'default' => 'Sample linker paragraph text'
+        'default' => 'Sample linker paragraph text',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_linker_text_control', array(
@@ -169,7 +173,8 @@ function WP_BS_about_txt($wp_customize) {
     ));
 
     $wp_customize->add_setting('WP_BS_about_headline', array(
-        'default' => 'Sample linker headline'
+        'default' => 'Sample linker headline',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_about_headline_control', array(
@@ -180,7 +185,8 @@ function WP_BS_about_txt($wp_customize) {
 
     // Paragraph text
     $wp_customize->add_setting('WP_BS_about_us_text', array(
-        'default' => 'Sample linker paragraph text'
+        'default' => 'Sample linker paragraph text',
+        'sanitize_callback' => 'sanitize_text_field'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_about_us_text_control', array(
