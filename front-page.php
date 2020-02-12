@@ -15,7 +15,7 @@
   <?php wp_head(); ?>
     <style>
         .showcase {
-            background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/showcase.jpg'); ?>);
+            background: url(<?php echo get_theme_mod('showcase_image', get_template_directory_uri().'/showcase.jpg'); ?>);
         }
     </style>
 </head>

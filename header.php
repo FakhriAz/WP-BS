@@ -14,7 +14,7 @@
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
