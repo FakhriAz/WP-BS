@@ -34,5 +34,4 @@ comment_form($comments_args);
 ?>
 </div>
 <!-- Comments pagination -->
-<?php paginate_comments_links(); ?>
 <?php paginate_comments_links( array('prev_text' => '&laquo; PREV', 'next_text' => 'NEXT &raquo;') ); ?>
