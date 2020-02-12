@@ -76,33 +76,6 @@ function WP_BS_un_fold_txt($wp_customize) {
         'title' => 'Under the fold customize menu'
     ));
 
-    $wp_customize->add_setting('WP_BS_un_fold_display', array(
-        'default' => 'No',
-        'sanitize_callback' => 'theme_sanitize_yn'
-    ));
-    //Function to sanitize select option
-
-    function theme_sanitize_yn( $input ) {
-    $valid = array('No' => 'No',
-                    'Yes' => 'Yes'
-                );
-    if ( array_key_exists( $input, $valid ) ) {
-    return $input;
-    } else {
-    return '';
-    }
-    }
-    //End of function to sanitize select option
-
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_fold_display_control', array(
-        'label' => 'Do you want to display this?',
-        'section' => 'WP_BS_un_fold_section',
-        'settings' => 'WP_BS_un_fold_display',
-        'type' => 'select',
-        'choices' => array('No' => 'No', 'Yes' => 'Yes')
-
-    )));
-
     $wp_customize->add_setting('WP_BS_un_fold_headline', array(
         'default' => 'Sample headline text',
         'sanitize_callback' => 'sanitize_text_field'
@@ -121,20 +94,7 @@ function WP_BS_sec_linker_txt($wp_customize) {
     $wp_customize->add_section('WP_BS_section_linker', array(
         'title' => 'Section linker'
     ));
-    $wp_customize->add_setting('WP_BS_linker_display', array(
-        'default' => 'Yes',
-        'sanitize_callback' => 'theme_sanitize_yn'
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'WP_BS_un_linker_control', array(
-        'label' => 'Do you want to display this?',
-        'section' => 'WP_BS_section_linker',
-        'settings' => 'WP_BS_linker_display',
-        'type' => 'select',
-        'choices' => array('No' => 'No', 'Yes' => 'Yes')
-
-    )));
-
+ 
     $wp_customize->add_setting('WP_BS_linker_headline', array(
         'default' => 'Sample linker headline',
         'sanitize_callback' => 'sanitize_text_field'
@@ -162,7 +122,6 @@ function WP_BS_sec_linker_txt($wp_customize) {
 
 }
 add_action('customize_register', 'WP_BS_sec_linker_txt');
-
 
 // About us text
 
@@ -197,6 +156,5 @@ function WP_BS_about_txt($wp_customize) {
 
 }
 add_action('customize_register', 'WP_BS_about_txt');
-
 
 ?>
