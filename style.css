@@ -264,3 +264,7 @@ a img.aligncenter {
     font-weight: bold;
     border: 1px solid grey;
 }
+
+div.nav-next {
+	padding-left: 10px;
+}
