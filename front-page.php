@@ -5,7 +5,6 @@
   <!-- Required meta tags -->
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom CSS -->
@@ -58,22 +57,22 @@
     <?php } ?>    
     <div class="container">
         <div class="row">
-        <div class="col-sm-4">
-            <div class="card box">
+        <div class="col-sm-4 text-center">
+            <div class="card_box">
                 <?php if(is_active_sidebar('box1')) : ?>
                     <?php dynamic_sidebar('box1') ?>
                 <?php endif; ?>
             </div>
         </div>  
-        <div class="col-sm-4">
-            <div class="card box">
+        <div class="col-sm-4 text-center">
+            <div class="card_box">
                 <?php if(is_active_sidebar('box2')) : ?>
                     <?php dynamic_sidebar('box2') ?>
                 <?php endif; ?>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card box">
+        <div class="col-sm-4 text-center">
+            <div class="card_box">
             <?php if(is_active_sidebar('box3')) : ?>
                     <?php dynamic_sidebar('box3') ?>
                 <?php endif; ?>
