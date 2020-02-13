@@ -15,8 +15,7 @@
       <p><?php __('No Posts', 'bs-wp')?></p>
     <?php endif; ?>
     </div><!-- posts div  -->
-      <div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">
-      <?php if ( is_active_sidebar( 'post-archive' ) ) : ?>
+          <?php if ( is_active_sidebar( 'post-archive' ) ) : ?>
           <?php dynamic_sidebar( 'post-archive' ); ?>
       <?php else : ?>
           <!-- Time to add some widgets! -->
