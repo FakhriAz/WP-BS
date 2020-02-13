@@ -25,15 +25,12 @@
       <p><?php __('No Posts', 'bs-wp')?></p>
       <?php endif; ?>
       </div><!-- post div  -->
-  <div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">
      <!--Archive sidebar   -->
     <?php if ( is_active_sidebar( 'post-archive' ) ) : ?>
         <?php dynamic_sidebar( 'post-archive' ); ?>
     <?php else : ?>
         <!-- Time to add some widgets! -->
     <?php endif; ?>
-    </div>
-    <!--  col archive   -->
       </div> <!-- row -->
   </div> <!-- Container -->
   <!--blog-->   
