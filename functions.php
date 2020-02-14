@@ -62,7 +62,7 @@ require get_template_directory(). '/inc/customizer.php';
 function post_archive_register_sidebars() {
     register_sidebar(
         array(
-            'name'          => __( 'Primary Sidebar', 'bs-wp' ),
+            'name'          => __( 'Posts archive dated', 'bs-wp' ),
             'id'            => 'post-archive',
             'description' => __( 'post archive sidebar.', 'bs-wp' ),
             'before_widget' => '<div class="col-sm-3 p-2 align-self-start archive-sidebar-widget">',
@@ -73,6 +73,43 @@ function post_archive_register_sidebars() {
     );
 }
 add_action( 'widgets_init', 'post_archive_register_sidebars' );
+
+//Top right sidebar widget start
+
+function top_right_register_sidebars() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Top right info sidebar', 'bs-wp' ),
+            'id'            => 'info-top-right',
+            'description' => __( 'Top right information sidebar.', 'bs-wp' ),
+            'before_widget' => '<div class="col-sm-3 p-2 align-self-start top-right-sidebar-widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3">',
+            'after_title' => '</h2>'
+        )
+    );
+}
+add_action( 'widgets_init', 'top_right_register_sidebars' );
+//Top right sidebar widget end
+
+// Social links sidebar wbuttom in blog start
+
+function buttom_right_register_sidebars() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Buttom right social links sidebar', 'bs-wp' ),
+            'id'            => 'social-buttom-right',
+            'description' => __( 'Social links sidebar.', 'bs-wp' ),
+            'before_widget' => '<div class="col-sm-3 p-2 align-self-start top-right-sidebar-widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3">',
+            'after_title' => '</h2>'
+        )
+    );
+}
+add_action( 'widgets_init', 'buttom_right_register_sidebars' );
+
+// Social links sidebar widget in blog end
 
 // 404 page
 
