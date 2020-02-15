@@ -1,9 +1,9 @@
 <?php get_header(); ?>
   <!--wrapper-->
   <div class="container flex-column">
-    <div class="row">
+    <div class="row d-md-block">
       <!-- Sidebar widget -->
-      <div class="col-sm-9">
+      <div class="col-md-9 float-left posts-content">
     <h3 class="d-flex justify-content-center">Lastest blog posts</h3> 
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
@@ -15,7 +15,6 @@
       <p><?php __('No Posts', 'bs-wp')?></p>
     <?php endif; ?>
     </div><!-- posts div  -->
-
       <!-- Top right sidebar widget start -->
       <?php if ( is_active_sidebar( 'info-top-right' ) ) : ?>
           <?php dynamic_sidebar( 'info-top-right' ); ?> 
