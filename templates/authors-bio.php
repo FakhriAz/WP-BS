@@ -23,9 +23,9 @@
 				the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
 
 				// Output the authors list.
-				twentyfourteen_list_authors();
+				wp_bs_list_authors();
 
-				edit_post_link( __( 'Edit', 'twentyfourteen' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' );
+				edit_post_link( __( 'Edit', 'wp-bs' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' );
 				?>
 			</article><!-- #post-<?php the_ID(); ?> -->
 

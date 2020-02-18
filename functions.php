@@ -148,7 +148,7 @@ add_action( 'after_setup_theme', 'do_title_theme_setup');
 if ( ! isset( $content_width ) ) $content_width = 900;
 
 //Contributors function start
-function twentyfourteen_list_authors() {
+function wp_bs_list_authors() {
     $contributor_ids = get_users(
         array(
             'fields'  => 'ID',
@@ -178,7 +178,7 @@ function twentyfourteen_list_authors() {
             <a class="button contributor-posts-link" href="<?php echo esc_url( get_author_posts_url( $contributor_id ) ); ?>">
                 <?php
                 /* translators: %d: Post count. */
-                printf( _n( '%d Article', '%d Articles', $post_count, 'twentyfourteen' ), $post_count );
+                printf( _n( '%d Article', '%d Articles', $post_count, 'wp-bs' ), $post_count );
                 ?>
             </a>
         </div><!-- .contributor-summary -->
