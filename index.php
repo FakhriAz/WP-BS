@@ -4,7 +4,7 @@
     <div class="row d-md-block">
       <!-- Sidebar widget -->
       <div class="col-md-9 float-left posts-content">
-    <h3 class="d-flex justify-content-center">Lastest blog posts</h3> 
+    <h3 class="d-flex justify-content-center"></h3> 
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
           <?php get_template_part('content', get_post_format()); ?>
