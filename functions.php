@@ -66,7 +66,7 @@ function top_right_register_sidebars() {
             'name'          => __( 'Top right info sidebar', 'bs-wp' ),
             'id'            => 'info-top-right',
             'description' => __( 'Top right information sidebar.', 'bs-wp' ),
-            'before_widget' => '<div class="col-md-3 float-right order-1 p-2 align-self-start top-right-sidebar-widget">',
+            'before_widget' => '<div class="col-md-3 float-right order-1 p-2 top-right-sidebar-widget">',
             'after_widget' => '</div>',
             'before_title' => '<h3">',
             'after_title' => '</h2>'
@@ -83,7 +83,7 @@ function post_archive_register_sidebars() {
             'name'          => __( 'Posts archive dated', 'bs-wp' ),
             'id'            => 'post-archive',
             'description' => __( 'post archive sidebar.', 'bs-wp' ),
-            'before_widget' => '<div class="col-md-3 float-right order-2 p-2 align-self-start archive-sidebar-widget">',
+            'before_widget' => '<div class="col-md-3 float-right order-2 p-2 archive-sidebar-widget">',
             'after_widget' => '</div>',
             'before_title' => '<h3">',
             'after_title' => '</h2>'
@@ -101,7 +101,7 @@ function buttom_right_register_sidebars() {
             'name'          => __( 'Buttom right social links sidebar', 'bs-wp' ),
             'id'            => 'social-buttom-right',
             'description' => __( 'Social links sidebar.', 'bs-wp' ),
-            'before_widget' => '<div class="col-md-3 float-right order-3 p-2 align-self-start buttom-right-sidebar-widget">',
+            'before_widget' => '<div class="col-md-3 float-right order-3 p-2 buttom-right-sidebar-widget">',
             'after_widget' => '</div>',
             'before_title' => '<h3">',
             'after_title' => '</h2>'
