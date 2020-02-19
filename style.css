@@ -147,7 +147,7 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
 
@@ -320,3 +320,13 @@ div.nav-next {
     color: #000;
     text-decoration: none;
   }
+
+/* Archive sidebar  */
+.archive-sidebar-widget{
+    height:30rem;
+    overflow: scroll;
+}
+/* Post content*/
+ .posts-content {
+     height: 60rem;
+ }
