@@ -2,7 +2,6 @@
   <!--wrapper-->
   <!-- Trying to fix broken layout -->
   <div class="container">
-    <!-- <div class="row d-md-block"> -->
       <!-- Sidebar widget -->
       <div class="posts-content">
          <?php if(have_posts()) : ?>
@@ -15,7 +14,7 @@
              <p><?php __('No Posts', 'bs-wp')?></p>
         <?php endif; ?>
       </div><!-- posts div  -->
-      
+
     <div class="sidebar">
       <!-- Top right sidebar widget start -->
       <?php if ( is_active_sidebar( 'info-top-right' ) ) : ?>
