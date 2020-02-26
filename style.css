@@ -326,7 +326,39 @@ div.nav-next {
     height:30rem;
     overflow: scroll;
 }
-/* Post content*/
- .posts-content {
-     height: 60rem;
+/* Posts content*/
+ /* .posts-content {
+     height: 100vh;
+ } */
+
+ .container {
+    display: flex;
+    flex-flow: row wrap;
  }
+/* Trial to fix blog layout*/
+ .posts-content, .sidebar {
+    flex-grow: 1;
+    flex-basis: 100%;
+ }
+
+ .posts-content {
+    padding: 10px;
+}
+
+.sidebar {
+    padding: 10px;
+}
+
+/* medium screen */
+@media all and (min-width: 600px) {
+    /* if screen > 600px sidebar appears alongside blog getting 1/3rd of space */
+  .posts-content { flex: 2 0px; }
+  .sidebar { flex: 1 0px; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* On bigger screens, sidebar now only gets 1/4 of space */
+  .posts-content { flex: 3 0px; }
+  .sidebar { flex: 1 0px; }
+}

@@ -1,5 +1,5 @@
 <footer>
-    <div class="cr-author d-flex flex-row justify-content-center">
+    <div class="cr-author d-flex col flex-row justify-content-center">
       <p>Developed by: Fakhri Azzouz &copy; <?php echo Date('Y'); ?> - <?php bloginfo('name')?></p>
     </div>
   </footer>
