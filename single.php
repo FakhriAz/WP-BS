@@ -3,7 +3,11 @@
     <div class="posts-content">
     <?php if (have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
-        <?php get_template_part('content', get_post_format()); ?>
+        <?php get_template_part('content', get_post_format());
+        if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+        ?>
         <!-- Adding post class function -->
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <!-- Post class function code ends here -->

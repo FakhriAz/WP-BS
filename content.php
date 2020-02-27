@@ -24,7 +24,4 @@
             <?php else: ?>
                 <?php the_excerpt(); ?>    
             <?php endif; ?>  
-            <?php if(is_single()) : ?>
-                <?php comments_template(); ?>     
-            <?php endif; ?>
       </div><!--  blog post  -->
