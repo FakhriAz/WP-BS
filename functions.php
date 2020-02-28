@@ -66,10 +66,10 @@ function top_right_register_sidebars() {
             'name'          => __( 'Top right info sidebar', 'bs-wp' ),
             'id'            => 'info-top-right',
             'description' => __( 'Top right information sidebar.', 'bs-wp' ),
-            'before_widget' => '<div>',
+            'before_widget' => '<div class="info-sidebar-container">',
             'after_widget' => '</div>',
-            'before_title' => '<h3">',
-            'after_title' => '</h2>'
+            'before_title' => '<h3 class="info-sidebar-title">',
+            'after_title' => '</h3>'
         )
     );
 }
@@ -83,10 +83,10 @@ function post_archive_register_sidebars() {
             'name'          => __( 'Posts archive dated', 'bs-wp' ),
             'id'            => 'post-archive',
             'description' => __( 'post archive sidebar.', 'bs-wp' ),
-            'before_widget' => '<div>',
+            'before_widget' => '<div class="posts-archive-container">',
             'after_widget' => '</div>',
-            'before_title' => '<h3">',
-            'after_title' => '</h2>'
+            'before_title' => '<h3 class="posts-archive-title">',
+            'after_title' => '</h3>'
         )
     );
 }
@@ -101,10 +101,10 @@ function buttom_right_register_sidebars() {
             'name'          => __( 'Buttom right social links sidebar', 'bs-wp' ),
             'id'            => 'social-buttom-right',
             'description' => __( 'Social links sidebar.', 'bs-wp' ),
-            'before_widget' => '<div>',
+            'before_widget' => '<div class="social-links-container">',
             'after_widget' => '</div>',
-            'before_title' => '<h3">',
-            'after_title' => '</h2>'
+            'before_title' => '<h3 class="social-links-title">',
+            'after_title' => '</h3>'
         )
     );
 }

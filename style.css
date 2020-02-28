@@ -342,7 +342,14 @@ div.nav-next {
 }
 
 .sidebar {
-    padding: 10px;
+    padding: 10px;;
+}
+
+.info-sidebar-container, .posts-archive-container, .social-links-container {
+    background: rgb(196, 232, 255);
+    border-radius: 3.5%;
+    margin-bottom: 1em;
+    padding:.5em;
 }
 
 /* medium screen */
