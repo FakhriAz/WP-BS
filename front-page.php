@@ -43,7 +43,7 @@
   </nav>
   <!-- copied from index.html -->
   <section class="showcase">
-    <div class="container">  
+    <div class="container1">  
         <h1><?php echo get_theme_mod('showcase_heading', 'My first WP Theme') ?></h1>
         <p><?php echo get_theme_mod('showcase_text', 'Custom WP theme') ?></p>
         <a href="<?php echo get_theme_mod('btn_url', 'http://www.google.com/ncr') ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text', 'Get Started') ?></a>  

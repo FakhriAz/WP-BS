@@ -326,16 +326,12 @@ div.nav-next {
     height:30rem;
     overflow: scroll;
 }
-/* Posts content*/
- /* .posts-content {
-     height: 100vh;
- } */
 
- .container {
+.container {
     display: flex;
     flex-flow: row wrap;
  }
-/* Trial to fix blog layout*/
+/* Blog layout*/
  .posts-content, .sidebar {
     flex-grow: 1;
     flex-basis: 100%;
