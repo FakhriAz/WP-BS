@@ -15,7 +15,7 @@
 	'reverse_children'  => '',
 	'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
 	'short_ping'        => false,   // @since 3.6
-        'echo'              => true     // boolean, default is true
+        'echo'              => true,     // boolean, default is true
 ); ?>   
 <?php
 wp_list_comments($args, $comments);

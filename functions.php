@@ -30,7 +30,7 @@ function wpbs_init_widget($id) {
         'before_widget'=>'<div class="box">',
         'after_widget' =>'</div>', 
         'before_title'=>'<h5>',
-        'after_title' =>'</h5>'
+        'after_title' =>'</h5>',
     ));
     
     register_sidebar(array(
@@ -39,7 +39,7 @@ function wpbs_init_widget($id) {
         'before_widget'=>'<div class="box">',
         'after_widget' =>'</div>', 
         'before_title'=>'<h5>',
-        'after_title' =>'</h5>' 
+        'after_title' =>'</h5>', 
     ));
 
     register_sidebar(array(
@@ -48,7 +48,7 @@ function wpbs_init_widget($id) {
         'before_widget'=>'<div class="box">',
         'after_widget' =>'</div>', 
         'before_title'=>'<h5>',
-        'after_title' =>'</h5>'
+        'after_title' =>'</h5>',
     ));
 }
 
@@ -69,7 +69,7 @@ function top_right_register_sidebars() {
             'before_widget' => '<div class="info-sidebar-container">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="info-sidebar-title">',
-            'after_title' => '</h3>'
+            'after_title' => '</h3>',
         )
     );
 }
@@ -86,7 +86,7 @@ function post_archive_register_sidebars() {
             'before_widget' => '<div class="posts-archive-container">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="posts-archive-title">',
-            'after_title' => '</h3>'
+            'after_title' => '</h3>',
         )
     );
 }
@@ -104,7 +104,7 @@ function buttom_right_register_sidebars() {
             'before_widget' => '<div class="social-links-container">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="social-links-title">',
-            'after_title' => '</h3>'
+            'after_title' => '</h3>',
         )
     );
 }
@@ -121,7 +121,7 @@ register_sidebar( array(
     'before_widget' => '<div id="error-box">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
-    'after_title' => '</h3>'
+    'after_title' => '</h3>',
   ) );
 
 	// Add theme support for Automatic Feed Links
