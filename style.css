@@ -422,8 +422,8 @@ font-family: "Luicida Console", "Courier New", "Courier", monospace;
     text-decoration:none;
     text-shadow:0px 1px 0px #2f6627;
     } 
-      
-    #submit:hover {
+    
+#submit:hover {
     background:-webkit-gradient (linear, left top, left bottom, color-stop(0.05, #273beb), color-stop(1, #83b3eb));
     background:-moz-linear-gradient(top, #273beb 5%, #83b3eb 100%);
     background:-webkit-linear-gradient(top, #273beb 5%, #83b3eb 100%);
@@ -431,8 +431,34 @@ font-family: "Luicida Console", "Courier New", "Courier", monospace;
     background:-ms-linear-gradient(top, #273beb 5%, #83b3eb 100%);
     background:linear-gradient(to bottom, #273beb 5%, #83b3eb 100%);
     background-color:#273beb; 
-    }
-    #submit:active { 
+}
+#submit:active { 
     position:relative;
     top:1px;
-    }
+}
+/* Testing design for the front-page */
+
+body > hr {
+    background-color: #97C6A8;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top: 2em;
+    padding-bottom:2em;
+}
+
+.services_title > h2:nth-child(1) {
+    color: #3D5E47;
+}
+
+body > div.services_title {
+	background-color: #97C6A8;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 2em;
+    padding-bottom:2em;
+    
+}
+
+body > div.container > div {
+	margin-top: 1em;
+}
